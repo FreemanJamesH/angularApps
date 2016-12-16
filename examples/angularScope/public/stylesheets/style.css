@@ -1,8 +1,42 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.heading {
+  background-color: grey;
+  padding: 15px;
+}
+
+.secondaryHeading {
+  border-bottom: 1px solid black;
+}
+
+.listing {
+  height: 300px;
+  width: 100%;
+  min-width: 850px;
+  margin-bottom: 3px;
+  padding-right: 300px;
+  text-align: left;
+  background-color: rgba(190, 158, 88, 0.9)
+}
+
+.thumbnail {
+  float: left;
+  position: absolute;
+}
+
+.content {
+  margin-top: 100px;
+  float: right;
+  margin-right: 20%;
+}
+
+img {
+  height: 300px;
+  width: 300px;
 }
