@@ -7,12 +7,13 @@
     <script src="https://code.angularjs.org/1.5.7/angular.js"></script>
     <script src="https://code.angularjs.org/1.5.7/angular-route.js"></script>
     <script src="javascripts/module.js" charset="utf-8"></script>
+    <script src="javascripts/services.js" charset="utf-8"></script>
     <script src="javascripts/routes.js"></script>
     <script src="javascripts/controllers.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body ng-controller="main">
-    <h1 class="heading">Angular Example</h1>
+    <h1 class="heading">Angular Homes</h1>
+    <div ng-bind-html="quote"></div>-{{author}}
     <ng-view></ng-view>
-  </body>
 </html>

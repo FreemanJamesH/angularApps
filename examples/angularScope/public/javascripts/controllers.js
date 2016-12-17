@@ -1,5 +1,10 @@
-app.controller('main', function($scope) {
+app.controller('main', function($scope, $sce, quoteService) {
   $scope.title = "Main Page"
+  quoteService.quoteCall().then(function(results){
+    let quote = results.content
+    $scope.author = results.title
+    $scope.quote = $sce.trustAsHtml(quote)
+  })
 })
 
 app.controller('listings', function($scope) {
