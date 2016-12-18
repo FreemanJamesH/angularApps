@@ -1,10 +1,14 @@
 app.controller('main', function($scope, $sce, quoteService) {
   $scope.title = "Main Page"
-  quoteService.quoteCall().then(function(results){
-    let quote = results.content
-    $scope.author = results.title
-    $scope.quote = $sce.trustAsHtml(quote)
-  })
+  getQuote();
+  function getQuote(){
+    quoteService.quoteCall().then(function(results){
+      let quote = results.content
+      $scope.author = results.title
+      $scope.quote = $sce.trustAsHtml(quote)
+    })
+  }
+  $scope.reloadQuote = getQuote
 })
 
 app.controller('listings', function($scope) {
