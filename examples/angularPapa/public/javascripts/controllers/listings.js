@@ -6,9 +6,9 @@
     .controller('listings', listings)
 
   function listings() {
+
     var vm = this;
     vm.title = "Listings"
-
     vm.listings = [{
       title: 'Big house in the countryside',
       photo: 'http://www.oliverstravels.com/uploads/herder_image/crop_300_300_Severn%20Country%20House%20-%20Wales%20-%20Stately%20Escapes%20(6).jpg',

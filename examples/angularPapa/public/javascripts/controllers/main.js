@@ -6,6 +6,7 @@
     .controller('main', main)
 
   function main($sce, quoteService) {
+
     var vm = this;
     vm.title = 'Main Page'
     vm.reloadQuote = getQuote
