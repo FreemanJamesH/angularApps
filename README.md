@@ -14,9 +14,7 @@ As you get more comfortable with creating Angular apps, you will get better at r
 
 ## Which way is best?
 
-None of these dialects, or approaches, is 'the right way'.
-
-Some approaches are almost certainly better than others, but all of them were created by developers whose styling decisions were informed in part by their own opinions on subjective measures such as readability.
+None of these approaches is 'the right way'. Some approaches are almost certainly better than others, but all of them were created by developers whose styling decisions were informed in part by their own opinions on subjective measures such as readability.
 
 Some decisions were made for more functional reasons. For example, wrapping components in immediately-invoked functions (IIFE's) is good idea in order to prevent conflicts between variable names, but it is not, strictly speaking, required. To that end, it's still considered a styling choice.
 
